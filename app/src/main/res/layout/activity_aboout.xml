@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:requiresFadingEdge="horizontal"
+    app:layout_anchorGravity="bottom|end">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#222226"
+        tools:context=".Activity_Home">
+
+        <TextView
+            android:id="@+id/container_frame1"
+            android:layout_width="304dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="left"
+            android:includeFontPadding="false"
+            android:lineHeight="18.77dp"
+            android:text="Tentang Aplikasi"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/container_frame2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/container_frame2"
+            android:layout_width="178dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="left|top"
+            android:includeFontPadding="false"
+            android:lineHeight="18.77dp"
+            android:text="ABOUT"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/container_frame1"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="351dp"
+            android:layout_height="1113dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/container_frame1"
+            app:srcCompat="@drawable/drawable_shape_5" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="207dp"
+            android:layout_height="232dp"
+            android:layout_marginTop="44dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/container_frame1"
+            app:srcCompat="@drawable/jumpa" />
+
+
+        <TextView
+            android:id="@+id/text_basic_design"
+            android:layout_width="288dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:lineHeight="22dp"
+            android:text="ILLUSLATOR \nACADEMY"
+            android:textColor="#FFFFFFFF"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/text_design_tips"
+            android:layout_width="296dp"
+            android:layout_height="366dp"
+            android:gravity="left|top"
+            android:includeFontPadding="false"
+            android:lineHeight="22dp"
+            android:text="Aplikasi Illustrator Academy dirancang khusus untuk membantu kamu yang ingin belajar dasar-dasar desain menggunakan Adobe Illustrator. Melalui aplikasi ini, kamu akan mempelajari langkah-langkah praktis dalam membuat desain grafis seperti logo dan poster \n\nAplikasi ini  juga cocok untuk pemula yang ingin memperdalam keterampilan desain secara mandiri. Kami percaya bahwa setiap orang bisa menjadi kreatif dengan alat yang tepat, dan Illustrator Academy adalah kunci untuk memulai perjalanan desainmu!  "
+            android:textColor="#FFFFFFFF"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/text_basic_design" />
+
+        <TextView
+            android:id="@+id/text_profil_kami"
+            android:layout_width="339dp"
+            android:layout_height="33dp"
+            android:layout_gravity="top"
+            android:layout_marginBottom="448dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="PROFIL KAMI"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="135dp"
+            android:layout_height="152dp"
+            android:layout_marginBottom="296dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:srcCompat="@drawable/znih" />
+
+        <TextView
+            android:id="@+id/text_muhammad_zidan_dias_mayar"
+            android:layout_width="219dp"
+            android:layout_height="35dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:lineHeight="22dp"
+            android:text="Muhammad Zidan Dias Mayar\n(2203421013)"
+            android:textColor="#FFFFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <TextView
+            android:id="@+id/text_kamaluddin_ahmad"
+            android:layout_width="275dp"
+            android:layout_height="86dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:lineHeight="22dp"
+            android:text="Kamaluddin Ahmad\n(2203421009)"
+            android:textColor="#FFFFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="129dp"
+            android:layout_height="148dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/text_muhammad_zidan_dias_mayar"
+            app:srcCompat="@drawable/image_kamalll" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+    <LinearLayout
+        android:id="@+id/container_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:drawable/dialog_holo_dark_frame"
+        android:persistentDrawingCache="scrolling|animation">
+
+        <!-- Tombol Home -->
+        <ImageButton
+            android:id="@+id/button_home"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#373539"
+            android:contentDescription="Home"
+            android:scaleType="fitCenter"
+            android:src="@drawable/image_home" />
+
+        <!-- Tombol Info -->
+        <ImageButton
+            android:id="@+id/button_info"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:contentDescription="Info"
+            android:scaleType="fitCenter"
+            android:src="@drawable/image_info" />
+
+        <!-- Tombol Search -->
+        <ImageButton
+            android:id="@+id/button_search"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#373539"
+            android:contentDescription="Search"
+            android:scaleType="fitCenter"
+            android:src="@drawable/image_keyboard" />
+
+        <!-- Tombol Profile -->
+        <ImageButton
+            android:id="@+id/button_profile"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#373539"
+            android:contentDescription="Profile"
+            android:scaleType="fitCenter"
+            android:src="@drawable/image_book" />
+
+    </LinearLayout>
+
+    </RelativeLayout>
+

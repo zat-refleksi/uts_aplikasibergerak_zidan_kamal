@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:requiresFadingEdge="horizontal"
+    app:layout_anchorGravity="bottom|end">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg2"
+        tools:context=".Activity_Home">
+
+
+        <TextView
+            android:id="@+id/container_frame1"
+            android:layout_width="304dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="left"
+            android:includeFontPadding="false"
+            android:lineHeight="18.77dp"
+            android:text="ShortCut Illustrator"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/container_frame2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/container_frame2"
+            android:layout_width="178dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="left|top"
+            android:includeFontPadding="false"
+            android:lineHeight="18.77dp"
+            android:text="TOMBOL"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/container_frame1"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="351dp"
+            android:layout_height="1167dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/container_frame1"
+            app:srcCompat="@drawable/drawable_shape_5" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="258dp"
+            android:layout_height="158dp"
+            android:layout_marginTop="80dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/container_frame1"
+            app:srcCompat="@drawable/shorttt" />
+
+        <TextView
+            android:id="@+id/text_basic_design"
+            android:layout_width="291dp"
+            android:layout_height="87dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:lineHeight="22dp"
+            android:text="15 ShortCut\nPenting Di Ai"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:textColor="#FFFFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <TextView
+            android:layout_width="262dp"
+            android:layout_height="823dp"
+            android:layout_gravity="top"
+            android:gravity="left|top"
+            android:includeFontPadding="false"
+            android:lineHeight="22dp"
+            android:text="\n1. Ctrl + N: Membuat dokumen baru.\n2. Ctrl + O: Membuka dokumen yang sudah ada.\n3. Ctrl + S: Menyimpan proyek.\n4. Ctrl + Z: Undo, membatalkan tindakan terakhir.\n5. Ctrl + Shift + Z: Redo, mengulangi tindakan terakhir.\n6. Ctrl + G: Mengelompokkan objek yang dipilih.\n7. Ctrl + Shift + G: Memisahkan objek yang dikelompokkan.\n8. V: Memilih Selection Tool untuk memindahkan objek.\n9. P: Mengaktifkan Pen Tool untuk menggambar bentuk atau garis.\n10. Ctrl + T: Membuka panel karakter untuk mengedit teks.\n11. Ctrl + D: Mengulangi perintah terakhir.\n12. Ctrl + R: Menampilkan atau menyembunyikan penggaris (ruler).\n13. Alt + Drag: Menyalin objek dengan menyeretnya.\n14. Shift + M: Mengaktifkan Shape Builder Tool untuk menggabungkan atau memisahkan bentuk.\n15. Spacebar: Menggunakan Hand Tool untuk menggeser tampilan kanvas.\n\n\nDengan menggunakan shortcut ini, kamu dapat menghemat waktu dan lebih fokus pada proses kreatif dalam mendesain."
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.55"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/text_basic_design"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+    <!-- Bilah Navigasi Tetap -->
+    <LinearLayout
+        android:id="@+id/container_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="40dp"
+        android:background="@android:drawable/dialog_holo_dark_frame"
+        android:persistentDrawingCache="scrolling|animation">
+
+        <!-- Tombol Home -->
+        <ImageButton
+            android:id="@+id/button_home"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#373539"
+            android:contentDescription="Home"
+            android:scaleType="fitCenter"
+            android:src="@drawable/image_home" />
+
+        <!-- Tombol Info -->
+        <ImageButton
+            android:id="@+id/button_info"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#373539"
+            android:contentDescription="Info"
+            android:scaleType="fitCenter"
+            android:src="@drawable/image_info" />
+
+        <!-- Tombol Search -->
+        <ImageButton
+            android:id="@+id/button_search"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:contentDescription="Search"
+            android:scaleType="fitCenter"
+            android:src="@drawable/image_keyboard" />
+
+        <!-- Tombol Profile -->
+        <ImageButton
+            android:id="@+id/button_profile"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#373539"
+            android:contentDescription="Profile"
+            android:scaleType="fitCenter"
+            android:src="@drawable/image_book" />
+
+    </LinearLayout>
+
+</RelativeLayout>

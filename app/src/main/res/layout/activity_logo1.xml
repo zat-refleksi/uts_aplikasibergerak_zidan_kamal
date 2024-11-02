@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:requiresFadingEdge="horizontal"
+    app:layout_anchorGravity="bottom|end">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nyanya"
+        tools:context=".Activity_Home">
+
+        <TextView
+            android:id="@+id/container_frame1"
+            android:layout_width="309dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="left"
+            android:includeFontPadding="false"
+            android:lineHeight="18.77dp"
+            android:text="Belajar Desain Logo\n\nSederhana"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/container_frame2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/container_frame2"
+            android:layout_width="291dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="left|top"
+            android:includeFontPadding="false"
+            android:lineHeight="18.77dp"
+            android:text="TUTORIAL DASAR"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toTopOf="@+id/container_frame1"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="348dp"
+            android:layout_height="1095dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/container_frame1"
+            app:srcCompat="@drawable/drawable_shape_5" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="303dp"
+            android:layout_height="1037dp"
+            android:layout_gravity="top"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="left|top"
+            android:includeFontPadding="false"
+            android:lineHeight="22dp"
+            android:text="Langkah 1: Membuat Mockup di Kertas\n\n\n\n\n\n\n\n\n\nMulailah dengan menggambar sketsa logo di atas kertas. Pastikan bentuk, elemen, dan konsep logo sudah jelas. Sketsa ini
+akan menjadi panduan untuk logo digital yang akan kamu buat di Illustrator.\n\nLangkah 2: Mengimpor Mockup ke Adobe Illustrator\n\n\n\n\n\n\nSetelah selesai menggambar mockup di kertas, foto atau scan sketsa tersebut dan impor ke dalam Adobe Illustrator. Gunakan File &gt; Place untuk menempatkan gambar sketsa di lembar kerja. Sesuaikan ukuran dan posisinya sesuai kebutuhan.\n\nLangkah 3: Menggunakan Pen Tool untuk Mengikuti Sketsa\n\n\n\n\n\n\n\nAktifkan Pen Tool (tekan P) , Pastikan kamu menggambar dengan tepat mengikuti garis mockup untuk menghasilkan desain yang sesuai dengan konsep awal.\n"
+            android:textColor="#FFFEFE"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.482" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="127dp"
+            android:layout_height="183dp"
+            android:layout_marginTop="92dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/container_frame1"
+            app:srcCompat="@drawable/drawable_image" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="169dp"
+            android:layout_height="113dp"
+            android:layout_marginBottom="504dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/container_frame1"
+            app:layout_constraintVertical_bias="0.95"
+            app:srcCompat="@drawable/drawable_image_1" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="221dp"
+            android:layout_height="130dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.812"
+            app:srcCompat="@drawable/drawable_image_2" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="153dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#FF9800"
+            android:text="Next"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.798"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.206"
+            app:rippleColor="#80849D" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="159dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:text="ShortCut"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.19"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.203" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+    <!-- Bilah Navigasi Tetap -->
+    <LinearLayout
+        android:id="@+id/container_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:drawable/dialog_holo_dark_frame"
+        android:persistentDrawingCache="scrolling|animation">
+
+        <!-- Tombol Home -->
+        <ImageButton
+            android:id="@+id/button_home"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#373539"
+            android:contentDescription="Home"
+            android:scaleType="fitCenter"
+            android:src="@drawable/image_home" />
+
+        <!-- Tombol Info -->
+        <ImageButton
+            android:id="@+id/button_info"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#373539"
+            android:contentDescription="Info"
+            android:scaleType="fitCenter"
+            android:src="@drawable/image_info" />
+
+        <!-- Tombol Search -->
+        <ImageButton
+            android:id="@+id/button_search"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#373539"
+            android:contentDescription="Search"
+            android:scaleType="fitCenter"
+            android:src="@drawable/image_keyboard" />
+
+        <!-- Tombol Profile -->
+        <ImageButton
+            android:id="@+id/button_profile"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:contentDescription="Profile"
+            android:scaleType="fitCenter"
+            android:src="@drawable/image_book" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
